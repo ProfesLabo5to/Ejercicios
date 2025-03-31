@@ -1,7 +1,8 @@
 # Ejercicios
 Acá se subirán todos los ejercicios correspondientes a las unidades del Laboratorio de Programación Orientado a Objetos 2025.
-
-## Repaso estructuras en C++
+<details>
+   
+<summary> Repaso estructuras en C++ </summary>
 
 1. Crear la estructura `Empleado` que tiene un nombre, apellido, fecha de nacimiento, sexo y salario.  
 
@@ -119,3 +120,45 @@ de historia clínica.
       
       3- Ordenar y mostrar por pantalla, la tabla de mayor a menor puntaje para saber el equipo
       ganador anual de Formula 1.
+</details>
+
+<details>
+   
+<summary> JAVA (Unidad 0) </summary>
+
+1. (IngresoDatos) Escribe un programa en Java que realice lo siguiente:  
+      - Declarar una variable N de tipo int  
+      - Una variable A de tipo double  
+      - Una variable C de tipo char
+  
+   Luego de asignar a cada una un valor, mostrar por pantalla:  
+      - El valor de cada variable. 
+      - La suma de N + A  
+      - La diferencia de A – N 
+      - El valor numérico correspondiente al carácter que contiene la variable C. 
+     
+     Si por ejemplo le hemos dado a N el valor 5, a A el valor 4.56 y a C el valor ‘a’, se debe mostrar por pantalla:
+      ~~~
+         Variable N = 5 
+         Variable A = 4.56 
+         Variable C = a                       
+         5 + 4.56 = 9.559999999999999 
+         4.56 - 5 = -0.4400000000000004 
+         Valor numérico del carácter a = 97
+      ~~~    
+
+ 2. (NumeroMayor) Declarar 2 variables numéricas he indicar cuál es mayor de los dos. En caso de que sean iguales indicarlo también.  
+ 3. (DivisibleFor/DivisibleWhile) Muestra los números del 1 al 100 (ambos incluidos) divisibles entre 2 y 3.  
+ 4. (DiaLaboral)  Crear un programa que nos pida un día de la semana y nos diga si es un día laboral o no. Los días laborales se consideran de lunes a viernes. 
+ 5. (Vocales) Del siguiente String: “Ayer me compré muñecos de la marca ‘ToyCo’ por internet.” contar cuantas vocales hay en total y mostrarlo por pantalla.
+ 6. (ReemplazoLetra) Reemplazar todas las ´e´ del ejercicio anterior por la letra que ingrese el usuario.
+ 7. (IntroducirNumeros) Crear una aplicación que nos permite insertar números hasta que insertemos un -1. Luego, mostrar la cantidad de números introducidos.
+ 8. (IntroducirNumeros) Al ejercicio anterior, además de la cantidad de números introducidos se debe mostrar: 
+     - Mayor número introducido.
+     - Menor número introducido.
+     - Suma de todos los números.
+     - Suma de los números positivos.
+     - Suma de los números negativos. 
+ 9. (PalabrasIguales) Pedir dos palabras al usuario e indicar si son iguales o no. 
+</details>
+
