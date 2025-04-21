@@ -128,3 +128,64 @@ Crear una clase llamada `Cancion` con los siguientes atributos y métodos:
   - Constructor parametrizado
   - Getters y setters
 
+
+## Unidad 2 - ArrayLists y for each
+
+### 1. Operaciones básicas con ArrayLists
+En un programa:
+
+a. Crear un `ArrayList` de números enteros y mostrar su suma.  
+b. Crear un `ArrayList` de palabras y mostrar solo los elementos que empiezan con una letra específica.  
+c. Crear un `ArrayList` de objetos `Persona` y mostrar solo las personas que tienen más de 30 años.
+
+### 2. Clase `CD`
+Crear una clase `CD` compuesta de muchas canciones e implementar los siguientes métodos:
+- Constructor por defecto.
+- Getters y setters.
+- `numeroCanciones()`: Devuelve la cantidad de canciones en el CD.
+- `verCancion(int posicion)`: Devuelve la canción que se encuentra en esa posición.
+- `grabaCancion(int posicion, Cancion nuevaCancion)`: Reemplaza la canción en esa posición por una nueva.
+- `agrega(Cancion cancion)`: Agrega una canción al final del `ArrayList`.
+- `elimina(int posicion)`: Elimina la canción en la posición indicada.
+
+### 3. Clase `Alumno` (básica)
+Crear una clase que represente a un alumno de una escuela con los siguientes atributos:
+- `nombre`, `apellido`, `fechaNacimiento`, `listaDeNotas`
+
+Métodos:
+- Getters y setters de todos los atributos.
+- `agregarNota()`
+- `menorNota()`
+- `mayorNota()`
+
+### 4. Clase `Alumno` con materias
+Extensión del ejercicio anterior incorporando un atributo `materias`, el cual representa una lista de objetos `Materia`.
+
+Clase `Materia`:
+- Atributos: `nombre`, `listaDeContenidos`, `alumnosInscriptos`
+
+Métodos sugeridos:
+- `agregarMateria()`
+- `promedioEdadAlumnos()`
+- `promedioNotasAlumno()`
+
+### 5. Sistema de campeonatos de Curling
+Realizar un sistema que controle campeonatos de curling.
+
+**Requisitos del sistema:**
+- Los equipos deben registrarse con:
+  - Nombre del equipo
+  - Barrio de procedencia
+  - 11 jugadores (uno de ellos marcado como capitán)
+  - Disponibilidad horaria (mañana, tarde, noche)
+
+**De cada jugador:**
+- Nombre
+- Fecha de nacimiento
+- Número de camiseta (no se puede repetir dentro del mismo equipo)
+
+**Reglas del torneo:**
+- Modalidad todos contra todos
+- El sistema debe generar el fixture completo
+- Cada partido debe tener un día, turno y los equipos que juegan
+- Los partidos se agendan según disponibilidad horaria de los equipos
