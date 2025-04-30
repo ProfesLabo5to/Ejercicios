@@ -189,3 +189,50 @@ Realizar un sistema que controle campeonatos de curling.
 - El sistema debe generar el fixture completo
 - Cada partido debe tener un día, turno y los equipos que juegan
 - Los partidos se agendan según disponibilidad horaria de los equipos
+
+---
+
+## Ejercicios repaso evaluación 12/05
+
+### 1. Sistema de videoclubs
+
+Aparecieron de vuelta los videoclubs en la ciudad que se encargan de vender películas, ya sea en formato digital o físico. Nos han solicitado hacer el sistema que los administre.
+
+Las películas que pertenecen al establecimiento guardan:
+- Nombre
+- Género
+- Duración
+- Director/es
+- Actor/es
+- Idiomas disponibles
+
+Estas películas se organizan dentro de estanterías que se identifican con un número y guardan todas las películas que almacenan.
+
+Cada videoclub guarda:
+- Dirección
+- Código postal
+- Estanterías que contiene
+
+Se solicita modelar las clases con sus atributos correspondientes, constructores, getters y setters. Además, realizar una clase de prueba para cumplir con las siguientes funcionalidades:
+
+a) ABM de videoclubs, estanterías y películas.
+
+b) Mostrar el nombre y estantería de la película con mayor duración de un videoclub.
+
+c) Dada una película, retornar los actores mayores de edad.
+
+d) Retornar los directores que estén en más de una película de una estantería.
+
+e) Retornar las direcciones de los videoclubs que pertenezcan a una comuna en particular.
+
+f) Mostrar las películas de duración menor a 90 minutos con ubicación.
+
+g) Retornar el videoclub con más películas totales.
+
+h) Dado un género, mostrar qué películas hay en cada videoclub registrado.
+
+
+### 2. Clases necesarias para un `main`
+
+Dada una clase `main`, hacer las clases necesarias (con sus respectivos atributos y métodos) para que funcione correctamente.
+
