@@ -268,3 +268,44 @@ public static void main(String[] args) {
 ```
 
 
+## Unidad 3 - Herencia
+
+### 1. Revisar ejercicios anteriores y detectar herencias  
+Revisar los ejercicios anteriores y determinar dónde utilizar herencia (por ejemplo, entre `Rectángulo` y `Círculo`, o entre `Persona` y `Alumno`).  
+
+*Aclaración:* Si es necesario modificar clases ya creadas, háganlo.
+
+### 2. Sistema de flota de vehículos  
+Realizar un sistema que maneje la flota de vehículos de una empresa. De todos los vehículos (autos, camionetas y bicicletas) se debe conocer su marca, modelo, color, cantidad de ruedas y año de fabricación. Para los autos y las camionetas, guardar además la patente; en las camionetas, la capacidad de carga en kg; y en los autos, si son descapotables o no.  
+La empresa debe poder:  
+- Saber de qué tipo de vehículo posee más cantidad  
+- Añadir carga a una camioneta (sin superar su capacidad)  
+- Conocer el porcentaje de autos descapotables.
+
+### 3. Sistema de pedidos de almuerzos  
+Realizar un sistema para la gestión de pedidos de almuerzos. Los pedidos pueden ser realizados por alumnos (nombre, apellido, división) o profesores (nombre, apellido, porcentaje de descuento). Los platos tienen nombre y precio. Al registrar un pedido, incluir fecha de creación, plato, solicitante, hora de entrega y estado de entrega. El sistema debe permitir agregar, modificar y eliminar platos, y mantener una lista de pedidos. Se solicita:  
+- Listado de platos a cocinar en un día con su precio (aplicando descuentos)  
+- Top 3 de platos más pedidos.
+  
+### 4. Compra de computadoras personalizadas  
+Crear las clases necesarias para un sitio web de venta de computadoras personalizadas. El usuario elige una CPU y varios periféricos; la compra mínima incluye una CPU, un dispositivo de entrada y uno de salida. Al concretar la compra, guardar nombre, apellido, celular del cliente y método de pago (si es con tarjeta, 5 % de recargo y datos de la tarjeta).  
+Todos los componentes incluyen fabricante, modelo, precio (ajustable por inflación) y stock.  
+  -   **Entrada:** teclado y mouse (tipo de conector y puertos)  
+  -   **Salida:** pantallas e impresoras (puertos; para impresoras, método de impresión: inyección o láser)
+  
+Debe admitirse la incorporación de nuevos periféricos.  
+El programa deberá:  
+
+- Agregar la compra a la lista de computadoras vendidas y actualizar stock  
+- Calcular el precio total con todos los periféricos  
+- Mostrar la cantidad de dispositivos de entrada y de salida de una computadora vendida específica.
+
+### 5. Sistema de alarmas de edificio  
+Un edificio dispone de detectores de humo, sensores de temperatura y sensores de presión. Cada dispositivo tiene estado (conectado/desconectado), medida (valor real), umbral inicial y año de adquisición (para mantenimiento). El sistema recorre continuamente los dispositivos conectados y toma medidas; si la medida supera el umbral, dispara la alarma:  
+- Detector de humo: imprimir llamada a bomberos  
+- Sensor de temperatura: imprimir “¡Cuidado! La temperatura sube”  
+- Sensor de presión: imprimir “Sensor de presión activado”  
+Para evitar falsas alarmas, varios dispositivos pueden agruparse; el sensor compuesto dispara la alarma si la suma de las medidas del grupo dividida entre 3 supera su umbral. 
+
+### 6. Control de llamadas telefónicas  
+Realizar un sistema que registre las llamadas entre empleados de una empresa. Cada empleado tiene nombre, apellido, DNI, país y teléfono. Para realizar una llamada, se introduce el número destino; al finalizar, se registra la duración. El sistema debe almacenar: empleado origen, empleado destino, fecha y duración de cada llamada, y debe ser capaz de generar un listado de llamadas por empleado y un ranking de empleados que más tiempo llamaron al exterior. 
