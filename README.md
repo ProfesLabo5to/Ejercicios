@@ -1,7 +1,4 @@
----
-layout: default
-title: Ejercicios
----
+
 
 # Ejercicios
 Acá se subirán todos los ejercicios correspondientes a las unidades del Laboratorio de Programación Orientado a Objetos 2025.
