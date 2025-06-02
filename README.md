@@ -325,8 +325,8 @@ Hacer que las únicas editoriales de los libros que se crean puedan ser:
 - Sur  
 - Alianza
 
-### 2. Turnos en el ejercicio 7 de la Unidad 2
-Realizar las modificaciones necesarias en el ejercicio 7 de la **Unidad 2** para que los únicos turnos posibles sean:
+### 2. Turnos en el ejercicio 5 de la Unidad 2
+Realizar las modificaciones necesarias en el ejercicio 5 de la **Unidad 2** para que los únicos turnos posibles sean:
 - Mañana  
 - Tarde  
 - Noche
