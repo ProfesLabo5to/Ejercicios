@@ -1,13 +1,14 @@
-
+---
+layout: default
+title: Ejercicios
+---
 
 # Ejercicios
 Acá se subirán todos los ejercicios correspondientes a las unidades del Laboratorio de Programación Orientado a Objetos 2025.
 
-<!-- Dejar siempre UNA línea en blanco antes del <details> -->
+<details markdown="block">
+<summary><strong>Unidad 0 – Introducción y repaso al laboratorio</strong></summary>
 
-<details>
-<summary><strong>Unidad 0 - Introducción y repaso al laboratorio</strong></summary>
-  
 ### 1. IngresoDatos
 Escribe un programa en Java que realice lo siguiente:
 - Declarar una variable `N` de tipo `int`
@@ -52,13 +53,12 @@ Al ejercicio anterior, además de la cantidad de números introducidos, se debe 
 
 ### 9. PalabrasIguales
 Pedir dos palabras al usuario e indicar si son iguales o no.
+
 </details>
 
-<!-- Y otra línea en blanco para separar del siguiente bloque -->
+<details markdown="block">
+<summary><strong>Unidad 1 – Clases y objetos</strong></summary>
 
-<details>
-<summary><strong>Unidad 1 - Clases y objetos</strong></summary>
-  
 ### 1. Clase `Círculo`
 Crear una clase llamada `Círculo` con los siguientes atributos y métodos:
 - Atributo: `radio`
@@ -130,6 +130,7 @@ Crear una clase llamada `Cancion` con los siguientes atributos y métodos:
   - Constructor por defecto (inicializa atributos con cadenas vacías)
   - Constructor parametrizado
   - Getters y setters
+
 </details>
 
 <!-- línea en blanco antes y después de cada bloque <details> -->
