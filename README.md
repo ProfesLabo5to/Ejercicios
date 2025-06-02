@@ -131,7 +131,7 @@ Crear una clase llamada `Cancion` con los siguientes atributos y métodos:
 </details>
 
 <!-- línea en blanco antes y después de cada bloque <details> -->
-<details>
+<details markdown="block">
 <summary><strong> Unidad 2 - ArrayLists y for each</strong></summary>
 
 ### 1. Operaciones básicas con ArrayLists
@@ -194,7 +194,7 @@ Realizar un sistema que controle campeonatos de curling.
 - Los partidos se agendan según disponibilidad horaria de los equipos
 </details>
 
-<details>
+<details markdown="block">
 <summary><strong> Ejercicios repaso evaluación 12/05</strong></summary>
 
 ### 1. Sistema de videoclubs
@@ -271,7 +271,7 @@ public static void main(String[] args) {
 ```
 </details>
 
-<details>
+<details markdown="block">
 <summary><strong> Unidad 3 - Herencia</strong></summary>
 
 ### 1. Revisar ejercicios anteriores y detectar herencias  
@@ -317,6 +317,8 @@ Realizar un sistema que registre las llamadas entre empleados de una empresa. Ca
 
 ---
 
+<details markdown="block">
+
 ## Unidad 4 - Enums
 
 ### 1. Editoriales válidas
@@ -346,3 +348,6 @@ En una tienda de electrónica venden distintos tipos de productos. Si bien todos
 Los equipos de sonido, que pertenecen a la sección Multimedia, tienen un atributo para indicar si tienen el módulo Bluetooth integrado o no. Además, en la misma sección encontramos televisores de los cuales interesa saber, además del nombre, precio y stock, qué tecnología utilizan (ultraHd – 4K - FullHd) y la resolución en pixeles.  
 Por otro lado, los cargadores portátiles que son de la sección cargadores almacenarán también la cantidad de cargas que pueden hacer sin necesidad de recargarlos.  
 La tienda administra todos estos productos por lo que deberán crear los métodos necesarios que permitan agregar nuevos productos, modificarlos y eliminarlos. La tienda quiere conocer cuál es su producto con mayor stock y cual el de menor.
+
+</details>
+
