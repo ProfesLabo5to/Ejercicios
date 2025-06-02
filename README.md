@@ -309,3 +309,33 @@ Para evitar falsas alarmas, varios dispositivos pueden agruparse; el sensor comp
 
 ### 6. Control de llamadas telefónicas  
 Realizar un sistema que registre las llamadas entre empleados de una empresa. Cada empleado tiene nombre, apellido, DNI, país y teléfono. Para realizar una llamada, se introduce el número destino; al finalizar, se registra la duración. El sistema debe almacenar: empleado origen, empleado destino, fecha y duración de cada llamada, y debe ser capaz de generar un listado de llamadas por empleado y un ranking de empleados que más tiempo llamaron al exterior. 
+
+## Unidad 4 - Enums
+
+### 1. Editoriales válidas
+Hacer que las únicas editoriales de los libros que se crean puedan ser:
+- Kapelusz  
+- Sudamericana  
+- Atlántida  
+- El Ateneo  
+- Interzona  
+- Sur  
+- Alianza
+
+### 2. Turnos en el ejercicio 7 de la Unidad 2
+Realizar las modificaciones necesarias en el ejercicio 7 de la **Unidad 2** para que los únicos turnos posibles sean:
+- Mañana  
+- Tarde  
+- Noche
+
+### 3. Colores con códigos hexadecimales
+Crear una clase `enum` donde se describan distintos colores junto a su código hexadecimal e implementarlo en las clases en las que pidan colores.
+
+### 4. Aplicación de enums en ejercicios anteriores
+¿En otros enunciados de los que ya hicimos podés modificar los valores para crear clases enumerables? Hacelo en todos los que puedas.
+
+### 5. Tienda de productos electrónicos
+En una tienda de electrónica venden distintos tipos de productos. Si bien todos tienen un nombre, precio y un stock, según en qué sección se encuentran son los datos que interesa almacenar. 
+Los equipos de sonido, que pertenecen a la sección Multimedia, tienen un atributo para indicar si tienen el módulo Bluetooth integrado o no. Además, en la misma sección encontramos televisores de los cuales interesa saber, además del nombre, precio y stock, qué tecnología utilizan (ultraHd – 4K - FullHd) y la resolución en pixeles.  
+Por otro lado, los cargadores portátiles que son de la sección cargadores almacenarán también la cantidad de cargas que pueden hacer sin necesidad de recargarlos.  
+La tienda administra todos estos productos por lo que deberán crear los métodos necesarios que permitan agregar nuevos productos, modificarlos y eliminarlos. La tienda quiere conocer cuál es su producto con mayor stock y cual el de menor.
