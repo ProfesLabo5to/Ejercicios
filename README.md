@@ -1,6 +1,12 @@
+---
+layout: default
+title: Ejercicios
+---
 
 # Ejercicios
 Acá se subirán todos los ejercicios correspondientes a las unidades del Laboratorio de Programación Orientado a Objetos 2025.
+
+<!-- Dejar siempre UNA línea en blanco antes del <details> -->
 
 <details>
 <summary><strong>Unidad 0 - Introducción y repaso al laboratorio</strong></summary>
@@ -51,8 +57,10 @@ Al ejercicio anterior, además de la cantidad de números introducidos, se debe 
 Pedir dos palabras al usuario e indicar si son iguales o no.
 </details>
 
+<!-- Y otra línea en blanco para separar del siguiente bloque -->
+
 <details>
-<summary><strong> Unidad 1 - Clases y objetos</strong></summary>
+<summary><strong>Unidad 1 - Clases y objetos</strong></summary>
   
 ### 1. Clase `Círculo`
 Crear una clase llamada `Círculo` con los siguientes atributos y métodos:
@@ -127,6 +135,7 @@ Crear una clase llamada `Cancion` con los siguientes atributos y métodos:
   - Getters y setters
 </details>
 
+<!-- línea en blanco antes y después de cada bloque <details> -->
 <details>
 <summary><strong> Unidad 2 - ArrayLists y for each</strong></summary>
 
