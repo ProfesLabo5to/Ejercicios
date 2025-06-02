@@ -317,7 +317,6 @@ Realizar un sistema que registre las llamadas entre empleados de una empresa. Ca
 
 ---
 
-<details markdown="block">
 
 ## Unidad 4 - Enums
 
@@ -349,5 +348,4 @@ Los equipos de sonido, que pertenecen a la sección Multimedia, tienen un atribu
 Por otro lado, los cargadores portátiles que son de la sección cargadores almacenarán también la cantidad de cargas que pueden hacer sin necesidad de recargarlos.  
 La tienda administra todos estos productos por lo que deberán crear los métodos necesarios que permitan agregar nuevos productos, modificarlos y eliminarlos. La tienda quiere conocer cuál es su producto con mayor stock y cual el de menor.
 
-</details>
 
