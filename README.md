@@ -2,11 +2,9 @@
 # Ejercicios
 Acá se subirán todos los ejercicios correspondientes a las unidades del Laboratorio de Programación Orientado a Objetos 2025.
 
-
-## Unidad 0 - Introducción y repaso al laboratorio
-
-
-
+<details>
+<summary><strong>Unidad 0 - Introducción y repaso al laboratorio</strong></summary>
+  
 ### 1. IngresoDatos
 Escribe un programa en Java que realice lo siguiente:
 - Declarar una variable `N` de tipo `int`
@@ -51,11 +49,11 @@ Al ejercicio anterior, además de la cantidad de números introducidos, se debe 
 
 ### 9. PalabrasIguales
 Pedir dos palabras al usuario e indicar si son iguales o no.
+</details>
 
----
-
-## Unidad 1 - Clases y objetos
-
+<details>
+<summary><strong> Unidad 1 - Clases y objetos</strong></summary>
+  
 ### 1. Clase `Círculo`
 Crear una clase llamada `Círculo` con los siguientes atributos y métodos:
 - Atributo: `radio`
@@ -127,9 +125,10 @@ Crear una clase llamada `Cancion` con los siguientes atributos y métodos:
   - Constructor por defecto (inicializa atributos con cadenas vacías)
   - Constructor parametrizado
   - Getters y setters
+</details>
 
-
-## Unidad 2 - ArrayLists y for each
+<details>
+<summary><strong> Unidad 2 - ArrayLists y for each</strong></summary>
 
 ### 1. Operaciones básicas con ArrayLists
 En un programa:
@@ -189,10 +188,10 @@ Realizar un sistema que controle campeonatos de curling.
 - El sistema debe generar el fixture completo
 - Cada partido debe tener un día, turno y los equipos que juegan
 - Los partidos se agendan según disponibilidad horaria de los equipos
+</details>
 
----
-
-## Ejercicios repaso evaluación 12/05
+<details>
+<summary><strong> Ejercicios repaso evaluación 12/05</strong></summary>
 
 ### 1. Sistema de videoclubs
 
@@ -266,9 +265,10 @@ public static void main(String[] args) {
     }
 }
 ```
+</details>
 
-
-## Unidad 3 - Herencia
+<details>
+<summary><strong> Unidad 3 - Herencia</strong></summary>
 
 ### 1. Revisar ejercicios anteriores y detectar herencias  
 Revisar los ejercicios anteriores y determinar dónde utilizar herencia (por ejemplo, entre `Rectángulo` y `Círculo`, o entre `Persona` y `Alumno`).  
@@ -309,6 +309,9 @@ Para evitar falsas alarmas, varios dispositivos pueden agruparse; el sensor comp
 
 ### 6. Control de llamadas telefónicas  
 Realizar un sistema que registre las llamadas entre empleados de una empresa. Cada empleado tiene nombre, apellido, DNI, país y teléfono. Para realizar una llamada, se introduce el número destino; al finalizar, se registra la duración. El sistema debe almacenar: empleado origen, empleado destino, fecha y duración de cada llamada, y debe ser capaz de generar un listado de llamadas por empleado y un ranking de empleados que más tiempo llamaron al exterior. 
+</details>
+
+---
 
 ## Unidad 4 - Enums
 
