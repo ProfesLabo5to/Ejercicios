@@ -315,10 +315,9 @@ Para evitar falsas alarmas, varios dispositivos pueden agruparse; el sensor comp
 Realizar un sistema que registre las llamadas entre empleados de una empresa. Cada empleado tiene nombre, apellido, DNI, país y teléfono. Para realizar una llamada, se introduce el número destino; al finalizar, se registra la duración. El sistema debe almacenar: empleado origen, empleado destino, fecha y duración de cada llamada, y debe ser capaz de generar un listado de llamadas por empleado y un ranking de empleados que más tiempo llamaron al exterior. 
 </details>
 
----
 
-
-## Unidad 4 - Enums
+<details markdown="block">
+<summary><strong>Unidad 4 - Enums</strong></summary>
 
 ### 1. Editoriales válidas
 Hacer que las únicas editoriales de los libros que se crean puedan ser:
@@ -348,4 +347,125 @@ Los equipos de sonido, que pertenecen a la sección Multimedia, tienen un atribu
 Por otro lado, los cargadores portátiles que son de la sección cargadores almacenarán también la cantidad de cargas que pueden hacer sin necesidad de recargarlos.  
 La tienda administra todos estos productos por lo que deberán crear los métodos necesarios que permitan agregar nuevos productos, modificarlos y eliminarlos. La tienda quiere conocer cuál es su producto con mayor stock y cual el de menor.
 
+</details>
 
+---
+
+
+## Unidad 5 - Modificadores
+
+### 1. Ejercicios anteriores
+Hacer las modificaciones necesarias en cada una de las clases y método ya resueltas durante el año para que sean abstractas o estáticos si es necesario. 
+
+### 2. Recetas
+En una plataforma de recetas culinarias se definirán distintos platos que se podrán realizan indicando nombre del plato, nivel de dificultad (Fácil, medio o avanzado) y una lista de pasos para realizarlo.
+
+Si lo que se quiere cargar es una receta de un plato principal, entonces habrá que agregar información sobre el tiempo de cocción y el número de comensales. Si es un postre, la temperatura del horno en el que se prepara y si es apto diabéticos o no. Para las entradas, agregar si es fría o caliente.
+
+Es importante que sin importar de qué tipo de plato estamos hablando, en cualquier caso, se pueden mostrar las instrucciones en las que se detallan el paso a paso de la preparación. 
+
+Para los platos principales habrá que mostrar: “Esta receta tarda en cocinarse + _tiempo de cocción_ y los pasos son: _lista pasos_”. Para los postres se muestra la lista de pasos, pero por cada paso recordar mantener la cocina limpia y el horno al mínimo. Para las entradas, si son frías recordar una vez que se termina de mostrar la lista de pasos que guarde la preparación en la heladera. En cambio, si es caliente, antes de mostrarle la lista de pasos recordarle que prenda el horno. 
+
+Por último, nuestra plataforma deberá:  
+- Permitir agregar, eliminar y modificar recetas.  
+- Buscar recetas según dificultad. 
+- Filtrar recetas por tipo (_Desafío_: Usarlo usando un único if) 
+- Cantidad total de recetas cargadas. 
+- Dar la receta con mayor cantidad de pasos.
+
+### 3. Drones
+
+Se quiere coordinar una flota de drones dedicada a entregas y tareas de vigilancia. Para eso tendremos drones que tienen un nombre de modelo, fecha de adquisición, nivel de carga y un contador que refleja cuántos drones operativos hay. Además, este número servirá como id de cada drone para rastrearlo si su estado es _en vuelo_ o _en operativo_. En cambio, si el estado es _inactivo_ o _mantenimiento_ no se podrán rastrear (tener en cuenta que los únicos estados del drone van a ser estos, no hay más) 
+Todos los drones podrán recargar la batería: donde se asume que cada vez que se recarga se aumenta un 10%. Si la batería estaba por debajo del 20% cuando se quiere recargar, entonces va a 100%. 
+
+Por último, los drones también tienen en común que podrán ejecutar misiones y comunicar al sistema si pueden realizarla con éxito o no. La misión se ejecuta dependiendo si son drones de carga o de vigilancia y en ambos casos se indica la latitud y longitud a la cual se tienen que dirigir. Todos parten desde el Poli (Latitud: -34.573195, Longitud: -58.504111)
+
+Lo que hacen los drones de carga es guardar el peso de la carga que llevan y, al ejecutar una misión, en caso de que esté a 30 km o menos quiere decir que va a ser 3 viajes de ida y vuelta que le repercute en un 48% de batería. Si tiene la capacidad para hacerlo, entonces la misión será exitosa, sino no.
+
+Para los drones de vigilancia tienen guardados la cantidad de memoria que tiene su sd. Entonces, deberán viajar hasta el destino y cada 2 km guardar una foto de la zona en la sd que ocupa 12 Mb. Se debe chequear antes de empezar la misión si tiene almacenamiento para realizarlo o no. 
+
+_Sugerencia_: Utilizar el algoritmo de abajo que permite calcular la distancia en km en linea recta de un punto a otro 
+
+```java
+// Convertir a radianes 
+double lat1Rad = Math.toRadians(latitudOrigen); 
+double lon1Rad = Math.toRadians(longitudOrigen); 
+double lat2Rad = Math.toRadians(latitudDestino); 
+double lon2Rad = Math.toRadians(longitudDestino)); 
+ 
+// Fórmula de Haversine 
+double dLat = lat2Rad - lat1Rad; 
+double dLon = lon2Rad - lon1Rad; 
+double a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + 
+ Math.cos(lat1Rad) * Math.cos(lat2Rad) * Math.sin(dLon / 2) * Math.sin(dLon / 2); 
+double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)); 
+double radioTierraKm = 6371; 
+return radioTierraKm * c; 
+```
+
+### 4. Gestión de mascotas
+#### a)
+Vamos a manejar una aplicación de mascotas. Estas pueden ser: perros, gatos, pájaros. 
+
+Todas las mascotas tienen un nombre y un dueño (el nombre de la mascota debe ser único). Cada una tiene un saludo en particular:  
+- Para los perros el saludo es “guau”  
+- Para los gatos el saludo es “miau”  
+- Para los pajaritos el saludo es “pio
+
+Los pajaritos tienen una característica adicional, pueden ser o no cantores. Si son cantores hay que especificar cuál es su canto (diferente de “pio”).  
+
+Se debe poder realizar un alta de mascotas donde se indique el nombre, dueño y tipo. También se deben poder eliminar mascotas y modificar mascotas.  
+
+Dentro del menú de la aplicación debe existir la opción “Saludar”, la misma solicita el nombre al usuario y el nombre de la mascota. El programa debe responder:  
+
+- Si el usuario es el dueño de la mascota: se saluda con el saludo de la mascota (por ejemplo: guau) 
+
+- Si el usuario no es el dueño de la mascota: se saluda con el saludo de la mascota en mayúsculas y con un signo de exclamación (por ejemplo: GUAU!)
+
+En el caso de los pajaritos la situación cambia, si el usuario no es el dueño no debe 	responder nada
+
+#### b)
+Se agregan peces como mascotas con 10 vidas iniciales. Los peces no tienen saludo, pero cada vez que los saluda el dueño pierden una vida, de lo contrario, si los saluda un NO dueño mueren.  
+
+Para sumar vidas deben alimentarse mediante el método alimentar. Cada vez que se llama a dicho método se suma una vida. Si el pez se queda sin vida se debe eliminar automáticamente del listado de mascotas.  
+
+#### c)
+Para los perros, gatos y pajaritos también existe un método alimentar. Ese método suma alegría a la mascota. 
+
+Por cada punto de alegría que tenga la mascota el saludo se prolonga. Por ejemplo, para un gato que tiene 3 puntos de alegría el saludo es “miau miau miau”.  
+
+En los casos donde la alegría es mayor a 1 al saludar se resta un punto de alegría. Por ejemplo: 
+
+> Un gato tiene 3 puntos de alegría:
+>
+> 1. Saluda una vez con “miau miau miau” y se le resta 1 a su alegría quedando en 2.  
+> 2. Saluda nuevamente, esta vez con “miau miau” y se le resta 1 a su alegría quedando en 1.  
+> 3. Saluda nuevamente, esta vez con “miau” pero como su alegría ya estaba en 1 no se modifica.  
+
+
+Cada tipo de mascota debe tener un método el cual devuelve qué tipo de mascota es (Perro, Gato, Pajarito o Pez) 
+
+### 5. Sistema de bebidas
+
+Realizar un sistema que controle el consumo de bebidas de personas. Cada persona debe tener un nombre, apellido y DNI (el DNI debe ser único).
+
+Las bebebidas tienen un nombre y un coeficiente de positividad y uno de negatividad. Existen 3 clases de bebidas:
+
+- `Bebidas neutras`: en estas bebidas los coeficientes se establecen manualmente. 
+
+- `Bebidas azucaradas`: en estas bebidas se establece un atributo llamado “cantidad de azúcar”, el coeficiente de positividad es siempre 1 y el de negatividad se calcula multiplicando la cantidad de azúcar por 10. 
+
+- `Bebidas alcohólicas`: en estas bebidas se establece un atributo llamado “cantidad de alcohol”, el coeficiente de positividad es siempre cero y el de negatividad se calcula multiplicando la cantidad de alcohol por 20. 
+
+Cada persona tiene una lista de bebidas que consumió indicando bebida y cantidad. Se debe poder calcular el coeficiente de hidratación resultante de cada persona. Por ejemplo:  
+
+> Agua (coef. de negatividad = 0, coef. de positividad = 20)  
+> ​Coca (cantidad de azúcar = 5)  
+>  
+> ​Si Juan tomó 3 aguas y 2 cocas:  
+>  
+> ​  Coeficiente resultante para 3 aguas = 3 x (20 - 0) = 60  
+> ​  Coeficiente resultante para 2 cocas = 2 x [1 - (5 x 10)] = -98  
+> ​  Coeficiente resultante total = 60 + (-98) = -38
+
+Adicionalmente se debe poder calcular la persona con mejor y con peor coeficiente de hidratación y un método para que el usuario elija que bebida consumir y la cantidad.
