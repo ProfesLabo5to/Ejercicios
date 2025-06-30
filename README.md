@@ -1,5 +1,6 @@
 
 
+  
 # Ejercicios
 Acá se subirán todos los ejercicios correspondientes a las unidades del Laboratorio de Programación Orientado a Objetos 2025.
 
@@ -469,3 +470,38 @@ Cada persona tiene una lista de bebidas que consumió indicando bebida y cantida
 > ​  Coeficiente resultante total = 60 + (-98) = -38
 
 Adicionalmente se debe poder calcular la persona con mejor y con peor coeficiente de hidratación y un método para que el usuario elija que bebida consumir y la cantidad.
+
+<!-- línea en blanco antes y después de cada bloque <details> -->
+<details markdown="block">
+<summary><strong> Ejercicio repaso evaluación unidades 3, 4 y 5</strong></summary>
+  
+### 1. Gestión de tickets:
+
+Tenemos un sistema que se ocupa de revisar la VTV de los autos que circulan por la ciudad. Se compone de Software y dispositivos como cámaras, radares y camiones. Cuando algo no funciona como debería, o un usuario no entiende una funcionalidad, o se quieren agregar cosas nuevas se pueden emitir Tickets. Estos le informan a la empresa desarrolladora qué está pasando con su sistema. 
+
+Vamos a modelar la gestión de tickets de soporte técnico para este sistema. Todos los tickets tienen un cliente asignado, una descripción, una fecha y hora de creación, fecha y hora de finalización, una lista de comentarios donde los desarrolladores van a ir registrando anotaciones y estado del ticket: abierto, en progreso, resuelto, cerrado, cancelado. 
+
+Es importante que los tickets puedan cambiar su estado, que se puedan agregar comentarios por parte del desarrollador y que se puedan resolver. Tener en cuenta que al cambiar de estado o, si se resuelve el ticket, hacer todas las modificaciones necesarias 
+
+Los tickets pueden ser de hardware o de software. Para los de hardware vamos a guardar dispositivo y la forma de resolverlo es corroborando si hay repuestos disponibles para ese dispositivo. Si hay repuestos y el ticket estaba en progreso, cambiarlo a resuelto y retornar true, sino retornar false. 
+
+Los tickets de software guardan el software sobre el que se está emitiendo el ticket y estos tienen una cantidad máxima de intentos de resolución que es igual para todos y es de 3 intentos. Para poder resolverlo, si el software tiene un parche aplicable y todavía restan intentos, entonces si estaba en progreso pasa a resuelto y retorna true. Si alguna de las dos condicionas falla, retorna false.  
+
+Como parte de la gestión, tendremos una lista con los tickets de software y de hardware y los desarrolladores. Se querrá conocer: 
+
+- Cantidad de tickets en un determinado estado. 
+- Cantidad de tickets totales. 
+- Ticket más antiguo que aún no ha sido agarrado por ningún desarrollador (es decir, el estado es abierto) 
+- Desarrollador que más tickets resuelve. 
+- Tickets asignados a un desarrollador determinado. 
+- Desarrollador más antiguo en el sistema. 
+- Dado un ticket determinado, conocer el o los desarrolladores asignados a resolverlo. 
+- El tiempo promedio de resolución de los tickets en general. Para hacerlo calcular la diferencia entre fecha de resolución y fecha de creación y luego el promedio (Sugerencia: utilizar clase Duration)  
+
+Resolver el sistema que responda de manera correcta a todas las funcionalidades mediante programación orientado a objetos. Incluir main. 
+
+</details>
+
+---
+
+
