@@ -350,11 +350,9 @@ La tienda administra todos estos productos por lo que deberán crear los método
 
 </details>
 
----
-
-
-## Unidad 5 - Modificadores
-
+<details markdown="block">
+<summary><strong>Unidad 5 - Modificadores</strong></summary>
+  
 ### 1. Ejercicios anteriores
 Hacer las modificaciones necesarias en cada una de las clases y método ya resueltas durante el año para que sean abstractas o estáticos si es necesario. 
 
@@ -470,10 +468,11 @@ Cada persona tiene una lista de bebidas que consumió indicando bebida y cantida
 > ​  Coeficiente resultante total = 60 + (-98) = -38
 
 Adicionalmente se debe poder calcular la persona con mejor y con peor coeficiente de hidratación y un método para que el usuario elija que bebida consumir y la cantidad.
+</details>
 
-<!-- línea en blanco antes y después de cada bloque <details> -->
-<details markdown="block">
-<summary><strong> Ejercicio repaso evaluación unidades 3, 4 y 5</strong></summary>
+---
+
+## Ejercicio repaso evaluación unidades 3, 4 y 5</strong></summary>
   
 ### 1. Gestión de tickets:
 
@@ -500,8 +499,6 @@ Como parte de la gestión, tendremos una lista con los tickets de software y de 
 
 Resolver el sistema que responda de manera correcta a todas las funcionalidades mediante programación orientado a objetos. Incluir main. 
 
-</details>
 
----
 
 
