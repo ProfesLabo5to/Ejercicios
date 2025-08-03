@@ -504,18 +504,37 @@ Resolver el sistema que responda de manera correcta a todas las funcionalidades 
 
 ## Unidad 5 - HashMaps y HashSets
   
-### 1. Asistencia de empleado
+### 1. Vacunatorio
 
-Realizar un sistema que controle la asistencia de un empleado a su trabajo.  
+Se va a realizar una campaña nacional de vacunación y nos piden un sistema para registrar los ciudadanos ya vacunados. 
 
-El empleado debe tener un nombre, apellido, teléfono, fecha de nacimiento y qué días de lunes a viernes debe asistir.  
-Cada empleado tiene una lista de asistencias, esto quiere decir que cuando el empleado ingresa a la empresa, se registra y dicho registro ingresa a una lista conteniendo la fecha y hora de ingreso (implementar tipo de dato DateTime)  
+De cada ciudadano tenemos dni, nombre y apellido, provincia de residencia, domicilio y mail de contacto. A su vez, las vacunas tienen una fecha de fabricación, fecha d eaplicación, numero de lote, numero de fabricacion y nombre comercial.
 
-El empleado debe tener una forma de comprobar el porcentaje de asistencia en un mes en particular.  
+Se solicita poder tener en nuestro sistema lo necesario para que nos facilite:
+- Registrar una vacuna aplicada a un ciudadano.
+- Consultar el historial de vacunas de un ciudadano por dni.
+- Obtener cuantas personas fueron vacunadas por Provincia
+- Saber qué ciudadanos cumplen con tener una determinada cantidad de vacunas pasada por parametro.
+- Conocer dado una vacuna determinada qué ciudadanos ya se la dieron.
 
-Además, estos empleados deben pertenecer a una empresa y esra quiere tener la posibilidad de extraer la cantidad de empleados que superan el 80% de asistencia en un mes dado.  
+### 2. Pago de empleados
 
-### 2. Control altura y peso
+La empresa "Creativos sin límites" desea gestionar el pago de sus empleados que son todos diseñadores. Estos tienen una comisión sobre los proyectos que realizan de acuerdo al tipo de diseñador según la siguiente tabla:
+
+| Tipo de diseñador | Comisión | 
+|---|---|
+| UX | 8% | 
+| UI | 7% | 
+| IT | 12% | 
+
+Un diseñador no puede realizar un mismo proyecto dos veces. Entonces, estos almacenan una lista de los proyectos junto a cuánto ganaron por hacer cada uno. Así, un diseñador debe poder:
+- Conocer su sueldo. Para eso deberán adicionarle a la suma de lo que recaudó por todos los proyectos la comisión de acuerdo al tipo de diseñador que sea.
+- Saber cantidad de proyectos realizados hasta el momento.
+- Dado un proyecto determinado conocer cuánto gano sin comisión.
+- Mostrar el detalle del sueldo discriminado para todos los proyectos que hizo. Es decir, por cada proyecto mostrar el nombre, cuánto gano y cuánto representa la comisión
+
+
+### 3. Control altura y peso
 
 Realizar un sistema que controle la altura y peso de una persona a través del tiempo. La persona debe tener un nombre, apellido y fecha de nacimiento. 
 
@@ -529,7 +548,7 @@ La persona debe tener una forma de conocer:
 
 - El porcentaje de crecimiento de una fecha a otra.
 
-### 3. Control calorías
+### 4. Control calorías
 
 Realizar un sistema que controle las calorías consumidas por personas dentro de una familia. Las personas se almacenarán en una entidad denominada familia, es decir, una familia va a tener muchas personas. 
 
@@ -545,7 +564,7 @@ De las personas se desea conocer el nombre y fecha de nacimiento. Cada vez que u
 
 - Persona que consumió menos calorías en la familia. 
 
-### 4. Sistema de población
+### 5. Sistema de población
 
 Realizar un abm de lugares. Los lugares pueden ser de tipo: **Barrio**, **Ciudad**, **Provincia o Estado**, **País**, **Continente**.
 
