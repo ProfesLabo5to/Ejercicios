@@ -470,9 +470,8 @@ Cada persona tiene una lista de bebidas que consumió indicando bebida y cantida
 Adicionalmente se debe poder calcular la persona con mejor y con peor coeficiente de hidratación y un método para que el usuario elija que bebida consumir y la cantidad.
 </details>
 
----
-
-## Ejercicio repaso evaluación unidades 3, 4 y 5</strong></summary>
+<details markdown="block">
+<summary><strong> Ejercicio repaso evaluación unidades 3, 4 y 5</strong></summary>
   
 ### 1. Gestión de tickets:
 
@@ -499,6 +498,75 @@ Como parte de la gestión, tendremos una lista con los tickets de software y de 
 
 Resolver el sistema que responda de manera correcta a todas las funcionalidades mediante programación orientado a objetos. Incluir main. 
 
+</details>
+
+---
 
 
+ ## Unidad 5 - HashMaps y HashSets
+  
+### 1. Asistencia de empleado
 
+Realizar un sistema que controle la asistencia de un empleado a su trabajo.  
+
+El empleado debe tener un nombre, apellido, teléfono, fecha de nacimiento y qué días de lunes a viernes debe asistir.  
+Cada empleado tiene una lista de asistencias, esto quiere decir que cuando el empleado ingresa a la empresa, se registra y dicho registro ingresa a una lista conteniendo la fecha y hora de ingreso (implementar tipo de dato DateTime)  
+
+El empleado debe tener una forma de comprobar el porcentaje de asistencia en un mes en particular.  
+
+Además, estos empleados deben pertenecer a una empresa y esra quiere tener la posibilidad de extraer la cantidad de empleados que superan el 80% de asistencia en un mes dado.  
+
+### 2. Control altura y peso
+
+Realizar un sistema que controle la altura y peso de una persona a través del tiempo. La persona debe tener un nombre, apellido y fecha de nacimiento. 
+
+Cada persona cuando se pesa y mide debe registrar su peso y altura justo con la fecha. 
+
+La persona debe tener una forma de conocer:  
+
+- Su peso y altura en una fecha en particular.  
+
+- El promedio de peso y de altura en un año.   
+
+- El porcentaje de crecimiento de una fecha a otra.
+
+### 3. Control calorías
+
+Realizar un sistema que controle las calorías consumidas por personas dentro de una familia. Las personas se almacenarán en una entidad denominada familia, es decir, una familia va a tener muchas personas. 
+
+Existirán platos los cuales tendrán nombre, ingredientes y cantidad de calorías que poseen.  
+
+De las personas se desea conocer el nombre y fecha de nacimiento. Cada vez que una come un plato se debe guardar ese dato para luego saber:   
+
+- Cantidad de calorías consumidas en total por la persona. 
+
+- Promedio de calorías por familia. 
+
+- Persona que consumió más calorías en la familia. 
+
+- Persona que consumió menos calorías en la familia. 
+
+### 4. Sistema de población
+
+Realizar un abm de lugares. Los lugares pueden ser de tipo: **Barrio**, **Ciudad**, **Provincia o Estado**, **País**, **Continente**.
+
+Todos los tipos de lugares tienen un nombre, código y una lista de coordenadas (latitud y longitud) que unidas representan el contorno del lugar
+
+Las reglas de composición son:
+
+- Una **ciudad** está compuesta por barrios.
+- Una **provincia o estado** está compuesta por ciudades.
+- Un **país** está compuesto por provincias o estados.
+- Un **continente** está compuesto por países.
+
+Para el caso de los barrios tendrán un atributo llamado `población`, el mismo indica la cantidad de habitantes del barrio. En los otros casos este atributo no existe, pero se desea calcular la población de forma automática.  
+
+Tener en cuenta que en nuestro mundo se guardan una lista de Continentes. A realizar: 
+
+- ABM (Alta, Baja y Modificación) de lugares
+- Consulta de población de lugares por código de lugar
+- Pantalla de información con:
+  - País con más población
+  - País con menos población
+  - Continente con más población
+  - Continente con menos población
