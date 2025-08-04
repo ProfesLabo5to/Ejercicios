@@ -502,7 +502,7 @@ Resolver el sistema que responda de manera correcta a todas las funcionalidades 
 
 ---
 
-## Unidad 5 - HashMaps y HashSets
+## Unidad 6 - HashMaps y HashSets
   
 ### 1. Vacunatorio
 
