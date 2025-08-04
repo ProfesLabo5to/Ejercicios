@@ -508,7 +508,7 @@ Resolver el sistema que responda de manera correcta a todas las funcionalidades 
 
 Se va a realizar una campaña nacional de vacunación y nos piden un sistema para registrar los ciudadanos ya vacunados. 
 
-De cada ciudadano tenemos dni, nombre y apellido, provincia de residencia, domicilio y mail de contacto. A su vez, las vacunas tienen una fecha de fabricación, fecha d eaplicación, numero de lote, numero de fabricacion y nombre comercial.
+De cada ciudadano tenemos dni, nombre y apellido, provincia de residencia, domicilio y mail de contacto. A su vez, las vacunas tienen una fecha de fabricación, fecha de aplicación, numero de lote, numero de fabricacion y nombre comercial.
 
 Se solicita poder tener en nuestro sistema lo necesario para que nos facilite:
 - Registrar una vacuna aplicada a un ciudadano.
