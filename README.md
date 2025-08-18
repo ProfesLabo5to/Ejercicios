@@ -500,9 +500,8 @@ Resolver el sistema que responda de manera correcta a todas las funcionalidades 
 
 </details>
 
----
-
-## Unidad 6 - HashMaps y HashSets
+<details markdown="block">
+<summary><strong> Unidad 6 - HashMaps y HashSets </strong></summary>
   
 ### 1. Vacunatorio
 
@@ -588,3 +587,61 @@ Tener en cuenta que en nuestro mundo se guardan una lista de Continentes. A real
   - País con menos población
   - Continente con más población
   - Continente con menos población
+
+</details>
+
+---
+
+## Unidad 7 - Manejo de excepciones
+
+### 1. Ejecutar el siguiente fragmento de código:  
+
+```java
+public class Main {  
+    public static void Main(String[] args) {  
+        String nombre = null;  
+        System.out.println("El largo del nombre es:" + nombre.length);  
+    }  
+}
+```
+Resolver la excepción de cuatro formas diferentes. Siempre al final del programa 	habrá que mostrar el nombre de ustedes a modo de firma:  
+- Bloque try/catch.  
+- Throw. 
+- Throws. 
+- Clase personalizada.
+
+### 2. Sistemas de alarmas (ejercicio 5, unidad 3)
+
+Dado el ejercicio de sistema de alarmas que tiene un edificio (ejercicio 5, unidad 3), habrá que permitirle al usuario que pueda elegir de cuál de todos los dispositivos quiere obtener más información.  
+
+Para esto habrá que pedirle al usuario que ingrese un número desde el 0 hasta la cantidad de alarmas que estén registradas. Acorde al número que elija es el dispositivo que se mostrará. 
+
+Deberán tener en cuenta en la implementación que no se corte la ejecución del programa si el usuario no ingresa un número entero o ingresa un número mayor a la cantidad de dispositivos que hay instalados en el edificio. 
+
+### 3. Sistema componentes de pc (ejercicio 4, unidad 3)
+
+Agregarle al sistema de compras de componentes de computadora (ejercicio 4, unidad 3) las excepciones necesarias para que el usuario sepa si no hay stock de los componentes que eligió y lanzar una excepción en caso de que al hacer la compra falte uno de los componentes principales (una CPU, un dispositivo de entrada y uno de salida). 
+
+### 4. Biblioteca virtual
+
+Vamos a hacer un programa que me permita gestionar una biblioteca virtual con libros electrónicos, autores, usuarios y préstamos. 
+
+Los géneros de los libros pueden ser: ficción, no ficción, aventura, ciencia ficción, saga y romance. Los libros van a ser escritos por un autor del cual interesa conocer el nombre, la fecha de nacimiento, el dni y su bibliografía (todos los libros que escribió). 
+
+De cada libro electrónico se guardará el título, el autor, el género, el nombre del archivo pdf y la cantidad de descargas disponibles que tiene: 145 (es igual para todos los libros). 
+
+Los usuarios de la plataforma se registran ingresando nombre, fecha de nacimiento, DNI, mail y el tipo de membresía que tiene. Si es bronce podrá tener hasta 5 libros prestados, Plata como mucho 15 libros y si es oro 50 préstamos activos. 
+
+El sistema debe gestionar los préstamos y devoluciones de libros electrónicos. Si un usuario intenta tomar prestado un libro que ya ha alcanzado el límite, se debe lanzar una excepción personalizada (LimiteDePrestamosAlcanzadoException). Así como hay que lanzar la excepción (‘MembresiaException’) si el usuario ya alcanzó su cupo de libros que puede tomar prestados simultáneamente. 
+
+Además, hacer los métodos necesarios para poder agregar, borrar o modificar nuevos libros. En la clase 'Main' crea instancias de autores, libros electrónicos, usuarios y bibliotecarios para poder realizar operaciones de préstamo y devolución, y maneja las excepciones adecuadamente. 
+
+### 5. Sistema de bebidas (ejercicio 5, unidad 5)
+
+Añadir al ejercicio 3 de la unidad 6 el manejo de excepciones para corroborar que: 
+- Al añadir personas al sistema ya no exista ese dni. 
+- Encuentre la bebida que quiere consumir y tenga esa cantidad que solicita. 
+- Existen personas registradas para determinar el de mejor y peor coeficiente de hidratación. 
+
+
+
