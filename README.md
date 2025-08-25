@@ -590,6 +590,52 @@ Tener en cuenta que en nuestro mundo se guardan una lista de Continentes. A real
 
 </details>
 
+<details markdown="block">
+<summary><strong>Ejercicios repaso evaluación unidad 6</strong></summary>
+
+### 1. Consumo de electricidad de viviendas
+Realizar un sistema que administre el consumo de electricidad de viviendas. 
+
+Cada vivienda tendrá una dirección, un código postal y un dueño asignado. El dueño deberá tener asociado un nombre, un apellido y un DNI. Si la vivienda es una casa, se guardarán los metros cubiertos por un lado y los descubiertos por otro. En cambio, si es un departamento se guarda la cantidad de ambientes.  
+
+Una vez por mes se deberá cargar cuál fue el consumo de electricidad de cada vivienda. Al cargar el consumo se debe almacenar el mes (de enero a diciembre) y los KWh consumidos en ese periodo, comprobando que el mes no esté ya cargado para esa vivienda.  
+
+Además de permitir cargar el consumo, se debe generar el método correspondiente para poder calcular lo que debe pagar cada vivienda por su consumo. Para dicho cálculo se utilizan dos valores:  
+- Para casas: $100 el KWh
+- Para departamentos: $50 el KWh  
+
+_Ejemplo: si una casa consumió en un mes 20KWh debe pagar $2000._
+
+Por otro lado, si el consumo del mes se redujo un 10% respecto del consumo del mismo mes del año anterior se debe aplicar un descuento del 5% al número final. 
+Realizar las clases correspondientes con sus métodos asociados y un programa de prueba que demuestre el buen funcionamiento del sistema y cálculos ejemplo de lo que deben pagar las viviendas.  
+
+### 1. Estructura ONG
+
+Todas las personas que participan dentro de una ONG se registran indicando nombre, apellido, fecha de nacimiento, dirección, código postal y si desean registrarse para contribuir con una mensualidad o no. 
+
+Además, dentro de la organización hay distintos roles: Voluntarios miembro, voluntarios externos, administradores y profesores (titulares e interinos). Cabe destacar que los voluntarios no reciben un sueldo por lo que hacen mientras que los administradores y profesores sí. 
+
+Los voluntarios miembros tienen un puntaje que se va modificando cada vez que realizan una acción solidaria. De los voluntarios externos habrá que guardar la institución en la que trabajan indicando el nombre y dirección de esta.  
+
+Dentro de los que reciben un sueldo, habrá que guardar en qué banco se deposita el sueldo (Macro, Santander, BBVA y HSBC), la fecha de cobro y la fecha de alta en la empresa.  
+
+Si es un personal administrativo, es importante saber qué computadora utiliza (código alfanumérico) así como su nombre de usuario y la contraseña (verificar que tenga mínimo 8 caracteres, una mayúscula y algún carácter especial). Estos datos, en caso de que sea profesor, no importan. Sí será relevante almacenar el nombre de la materia que dictan y la cantidad de horas que trabajan. Todos los profesores interinos dan más de una materia por lo que habrá que guardar la información de todas las que enseña junto con la cantidad de horas.  
+
+Otra cosa que diferencian a las personas que participan de las ONG son las zonas barriales que visitan ya que se distribuyen en toda la capital de Buenos Aires. Dados los 48 barrios porteños, todos los voluntarios miembros se desarrollarán en: _Montserrat, Nueva Pompeya, Nuñez, Belgrano y Constitución_, todos los voluntarios externos lo harán en: _Coghlan, Palermo, Barracas, Parque Patricios, Retiro y Saavedra_, todos los profesores en: _Puerto Madero, San Cristóbal, Palermo, Monte Castro, Versalles, Villa Santa Rita y Colegiales_ y, por último, todos los administrativos estarán en: _Flores, Floresta, Agronomía, Colegiales y Parque Chas_ 
+
+Además de confeccionar la estructura correspondiente, se solicitan las siguientes funcionalidades:
+
+- Todos realizan una acción solidaria acorde al rol en el que están. La acción solidaria para los voluntarios consiste en mostrar un cartel que diga: “Ofrezco mi ayuda para lo que necesiten” además de sumarle un punto a su puntaje (si es voluntario miembro). Los administrativos deberán mostrar su usuario de pc junto al nombre y los profesores la o las materias que dictan en la ONG (dependiendo si es interino o no).  
+
+- Tanto de los asalariados como de los voluntarios importa saber si son mayores de edad o no.  
+
+- De los integrantes de la organización se mostrará el nombre de los incorporados hace menos de 2 meses.  
+
+- Mostrar de cada banco la cantidad de trabajadores que cobran el sueldo por ese medio. 
+
+</details>
+
+
 ---
 
 ## Unidad 7 - Manejo de excepciones
@@ -642,6 +688,7 @@ Añadir al ejercicio 3 de la unidad 6 el manejo de excepciones para corroborar q
 - Al añadir personas al sistema ya no exista ese dni. 
 - Encuentre la bebida que quiere consumir y tenga esa cantidad que solicita. 
 - Existen personas registradas para determinar el de mejor y peor coeficiente de hidratación. 
+
 
 
 
