@@ -609,7 +609,7 @@ _Ejemplo: si una casa consumió en un mes 20KWh debe pagar $2000._
 Por otro lado, si el consumo del mes se redujo un 10% respecto del consumo del mismo mes del año anterior se debe aplicar un descuento del 5% al número final. 
 Realizar las clases correspondientes con sus métodos asociados y un programa de prueba que demuestre el buen funcionamiento del sistema y cálculos ejemplo de lo que deben pagar las viviendas.  
 
-### 1. Estructura ONG
+### 2. Estructura ONG
 
 Todas las personas que participan dentro de una ONG se registran indicando nombre, apellido, fecha de nacimiento, dirección, código postal y si desean registrarse para contribuir con una mensualidad o no. 
 
