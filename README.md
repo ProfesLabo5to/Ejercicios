@@ -635,10 +635,8 @@ Además de confeccionar la estructura correspondiente, se solicitan las siguient
 
 </details>
 
-
----
-
-## Unidad 7 - Manejo de excepciones
+<details markdown="block">
+<summary><strong>Unidad 7 - Manejo de excepciones</strong></summary>
 
 ### 1. Ejecutar el siguiente fragmento de código:  
 
@@ -688,6 +686,69 @@ Añadir al ejercicio 3 de la unidad 6 el manejo de excepciones para corroborar q
 - Al añadir personas al sistema ya no exista ese dni. 
 - Encuentre la bebida que quiere consumir y tenga esa cantidad que solicita. 
 - Existen personas registradas para determinar el de mejor y peor coeficiente de hidratación. 
+</details>
+
+---
+
+## Unidad 8 - Interfaces polimórficas
+
+### 1. Elecciones en Octubre:  
+
+En época de elecciones, tenemos un sistema que administra la organización de los partidos políticos del país. Estos se manejan haciendo campaña de 3 formas como son las palomas mensajeras, los teléfonos móviles y los trabajadores.  
+
+Sabemos que las palomas mensajeras son un tipo específico de ave donde, además de guardar el color, nombre y especie que es común a todas las aves, se guardará también una variable que indique si ya aprendió el mapa para volar sola o no.  
+
+Por otro lado, los teléfonos móviles pertenecen al grupo de dispositivos por lo que, si bien es común para todo dispositivo el número de serie, fabricante y modelo, el teléfono móvil deberá guardar en particular a qué compañía telefónica pertenece {Claro, Personal, Movistar o Tuenti} y el número celular.  
+
+En el caso de los trabajadores habrá que conocer no sólo el nombre, apellido, dni, fecha de nacimiento sino también el número de cuil, el sueldo y la dirección de residencia.  
+
+Las personas, los teléfonos móviles y las palomas mensajeras para cumplir con lo que les pide su partido político envían mensajes en apoyo de los dirigentes del partido al cual militan. Cada partido tiene un nombre, un dirección donde se encuentra la oficina central, una cantidad de afiliados y una lista de los enviadores de mensajes.  
+
+Se deberá hacer un método para que se pueda agregar un mensajero a dicha lista y otro titulado: hacer campaña. Este consiste en recorrer todos los mensajeros afiliados y por cada uno enviar un mensaje que diga: “Vote por el partido para un mejor futuro”. Este mensaje, si es dado por una paloma mensajera deberá ser precedido por el siguiente lema: “Lanzando un papelito que dice:”. Eso sí, hay que tener en cuenta que el mensaje sólo lo puede enviar si ya aprendió a volar. Si el mensaje se transmitE por un teléfono móvil al mensaje oficial del partido le antecederá: “Conectando con la antena más cercana” siempre y cuando el teléfono esté prendido y tenga crédito disponible. Por último, si un trabajador transmite el mensaje, primero habrá que verificar si está en su horario laboral y luego deberá decir antes del mensaje común: “Yo, nombreTrabajador te invito a que…” 
+
+### 2. Campeonato de arco y flecha:
+
+En los nuevos bares de CABA se ha instalado la moda de jugar al arco y flecha. Para esto nos solicitaron un sistema en el que se pueda manejar el sistema de puntos y de beneficios que obtiene el cliente que participa de los tiros de arco y flecha. 
+
+En nuestro sistema tendremos una lista de bares que implementan el arco y flecha, una lista de todos los tipos de diana y una lista de todos los beneficios que ofrece este juego. 
+
+De cada bar se guardará una lista de las dianas que utiliza, la cantidad de clientes que juegan al arco y flecha, el dinero recaudado, una lista de todos los beneficios que decide implementar y una lista de sólo los beneficios acumulables. 
+
+Para el caso de los beneficios interesa guardar el nombre del beneficio y quién fue el usuario creador (alcanza con guardar solo el nombre de la persona). Si es un beneficio de gaseosa, se almacenan también a una lista de las gaseosas. Si es un beneficio de comidas, se almacenan también una lista de las comidas. Si es un beneficio de tragos, se almacenan también a una lista de los tragos. 
+
+La particularidad que tienen los beneficios es que no todos son acumulables. Únicamente son acumulables los beneficios de gaseosas y comidas. Esto quiere decir que sólo los beneficios de gaseosas y comidas tienen el método aplicarDescuentoExtra que para las gaseosas retorna $1000 y para las comidas $4500. 
+
+Las Dianas se dividen en tres tipos: Circulares, rectangulares y cuadradas. Todas las dianas tendrán un nombre identificatorio, un nivel de dificultad y una lista que relaciona el puntaje en cada franja con el color (los colores pueden ser sólo rojo, verde, amarillo, blanco o negro). Tener en cuenta que los puntajes no se repiten en una misma diana.  Además de eso, a todas las dianas circulares se les agrega el valor del radio que es de 13cm, a las dianas rectangulares se les agrega el valor de la altura y la base y a las dianas cuadradas se pide guardar el valor del lado. 
+
+Se solicita: 
+
+- Poder calcular el área de cualquier tipo de diana. Si es circular el cálculo será 
+_π × radio × radio_, si es el cálculo del área del rectángulo entonces _base × altura_ y si es un cuadrado: _lado × lado_. 
+
+- Para cada bar se quiere saber cuántos beneficios de tragos tiene. Es decir, aquellos beneficios no acumulables. 
+
+- Retornar la diana de nuestro sistema que tenga más cantidad de puntajes distintos.  
+
+- Realizar un main donde se prueben todas las funcionalidades pedidas.
+
+### 3. Tratamiento de modificación de sangre:
+
+En la fundación endocrinológica están haciendo una investigación sobre un tratamiento para modificar la sangre de los pacientes. Tienen una dudosa hipótesis de que, si todos los jóvenes tienen sangre A+ y todos los niños tienen sangre AB entonces sería más fácil evitar la multiplicación de enfermedades. 
+
+De cada paciente se guardó el nombre, apellido, fecha de nacimiento, el género y su tipo de sangre: A, B, AB y O. (tener en cuenta que cada tipo puede ser + o -). Luego, una vez recolectada esa información, se dividió a los pacientes en: Niños, Jóvenes, Adultos y Gerontes.  Según qué tipo de paciente es se guardará una información distinta y, la forma en la que se tratará también. En particular, solo tenemos información de cómo responden al tratamiento los jóvenes y niños, los Gerontes y Adultos aún no califican en este experimento, pero sí son parte del sistema. 
+
+De los jóvenes se guardará para todos los de esta categoría la edad mínima y máxima para pertenecer que es de 20 a 30 años respectivamente y las actividades deportivas que hacen. Si la cantidad de actividades que hacen es impar y les quedan 2 años o menos en esta categoría se les dirá: “Lamentamos comunicarte que tu sangre aún no va a poder ser modificada” y sino: “Será un tratamiento costoso, pero lo vamos a lograr”. 
+
+De los niños nos interesa saber el nivel de tolerancia a los medicamentos (1 menos tolerante y 10 más tolerante) y si tiene más de 3 años. Al solicitar tratamiento, si tiene más de tres años se mostrará un mensaje que diga: “Tu tratamiento tardará esta cantidad de días: ... (nivel de tolerancia * 2)”. Sino le mostramos: “Aún es chico para probar el tratamiento” 
+
+Además, el costo del tratamiento varía según el tipo de paciente que sean (Jóven o Niño). Para los niños hay que multiplicar el nivel de tolerancia * $450.000. Por otro lado, para los jóvenes con fecha de nacimiento en año impar el costo es el número de mes * $760.000, sino es el número de día * $145.400 
+
+En nuestro sistema tendremos guardados por un lado los pacientes que califican con el tratamiento (por ahora solo los jóvenes y niños) junto a los días de tratamiento que llevan y en el otro todos los pacientes que fueron (niños, jóvenes, adultos y gerontes).  
+
+Se solicita realizar un método que la fundación ejecutará todos los días y consiste en recorrer los pacientes en tratamiento y si pueden solicitar tratamiento se le suma uno a la cantidad de días que llevan en tratamiento. Luego, queremos otro método que diga la cantidad de pacientes que no aplican al tratamiento, es decir, la cantidad de Gerontes y Adultos que fueron a la fundación. 
+
+__Aplicar las clases, atributos, métodos e interfaces necesarias para poder cumplir con las funcionalidades del sistema y realizar un main donde se cumple con lo solicitado__
+
 
 
 
