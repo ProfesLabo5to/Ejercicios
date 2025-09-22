@@ -688,9 +688,8 @@ Añadir al ejercicio 3 de la unidad 6 el manejo de excepciones para corroborar q
 - Existen personas registradas para determinar el de mejor y peor coeficiente de hidratación. 
 </details>
 
----
-
-## Unidad 8 - Interfaces polimórficas
+<details markdown="block">
+<summary><strong>Unidad 8 - Interfaces polimórficas</strong></summary>
 
 ### 1. Elecciones en Octubre:  
 
@@ -749,7 +748,58 @@ Se solicita realizar un método que la fundación ejecutará todos los días y c
 
 __Aplicar las clases, atributos, métodos e interfaces necesarias para poder cumplir con las funcionalidades del sistema y realizar un main donde se cumple con lo solicitado__
 
+</details>
 
+---
 
+# Ejercicios repaso evaluación unidades 7 y 8
 
+### 1. Masterchef edición labo
+
+En el nuevo programa de cocina los participantes cocinan distintos platos. Estos se anotan indicando nombre, apellido, fecha de nacimiento, localidad y color de equipo al que pertenece: rojo, verde o azul.
+
+Dentro de la competencia los participantes se dividen en tipos: 
+- Principiantes
+- Intermedios
+- Expertos. 
+
+Para los participantes principiantes se guarda una lista de los ingredientes prohibidos que no puede usar en las recetas, los participantes intermedios cuentan con un stock propio de ingrediente y la cantidad correspondiente y los expertos no tienen ninguna restricción de alimentos ni stock, sino que tienen un tiempo límite para la preparación de sus recetas que es para todos los expertos igual: 80 min.
+
+Todos tendrán un método que les prepare el lugar de trabajo y según el tipo de participante es cómo responden a esto:
+- Los principiantes imprimen un mensaje que dice: “Ya guarde todos los elementos prohibidos y no voy a usar: ….. (muestra todos los nombres de los ingredientes prohibidos)”
+- Los intermedios muestran un mensaje que dice: “Mi stock a utilizar es de ….(muestran nombre solo de los ingredientes que tengan una cantidad >1”
+- Los expertos muestran un mensaje que dice: “Perdi 5 minutos preparando la mesa por lo que mi tiempo restante es: ….(muestra el tiempo restante actual para cocinar)”
+
+Luego, sabemos que los principiantes solo pueden cocinar y servir platos de entrada, los intermedios solo cocinar y servir platos principales, y los expertos podrán cocinar y servir tanto platos de entrada como platos principales. Estas dos funcionalidades se implementan distinto según el nivel del participante. Tener en cuenta que si se quiere cocinar un plato que no tiene los ingredientes necesarios o no alcanza el tiempo de preparado o tiene algún elemento prohibido lanzar la excepción correspondiente.
+
+El main donde se prueban las funcionalidades se debe llamar: MasterChefApp (sin excepción). Importante que antes de correr la clase corrector deberán correr su propio main para que se genere la carpeta out.
+
+**Descargar el corrector a incluir en el proyecto:**  
+[CorrectorMasterChef.java](https://github.com/ProfesLabo5to/ResolucionEjercicios/blob/main/CorrectorMasterChef.java)
+
+### 2.Préstamos virtuales
+
+Se busca desarrollar un sistema para gestionar una biblioteca virtual que incluya el control de préstamos de diferentes tipos de contenidos y los usuarios que lo utilizan.
+
+Los usuarios guardarán nombre, apellido, fecha de nacimiento, crédito ganado, mail y lista de todas las publicaciones que haya leído y otra lista donde solo tenga la lista de las publicaciones que pidió a préstamo y las veces que lo hizo.
+
+Tener en cuenta que en nuestro sistema cuando viene un usuario a devolver un préstamo es que se verifica que ese préstamo esté en fecha y al validarse correctamente se le suma uno en la lista de prestamos que hizo y la cantidad de veces. Si esto no sucede, enviar una excepción: “Prestamo devuelto fuera de fecha” y se calcula la multa. Esto devuelve un valor que hay que restarle al crédito del usuario y depende el tipo de publicación.
+
+Cada publicación que se encuentra tiene información básica, como título, autor, año de publicación y stock. Los tipos de publicaciones pueden ser libros (se agrega si tiene saga o no), revistas (se agrega nombre de la distribuidora) y audiolibros (se agrega duración del y peso del archivo)
+
+Para gestionar los préstamos, se almacena información sobre el artículo, el número de socio, la fecha de préstamo y la fecha de devolución estimada. Por ahora solo se pueden dar a préstamos los libros y revistas. La multa de los libros es de $7500 pesos y la de las revistas $3500
+
+De esta forma, dar a préstamo un libro implica poner que la fecha de devolución es 15 días más tarde y mostrarle al usuario el título de lo que se está llevando junto a cuando lo tiene que devolver.  Para las revistas, si el año de publicación es menor a 2020 entonces la fecha de devolución tiene que ser 10 días más tarde y sino la fecha de devolución son 3 días más tarde. 
+
+Luego de hacer la programación necesaria para poder dar a préstamo las publicaciones que tienen esa posibilidad, en el sistema bibliotecario se quieren almacenar tres cosas: Las publicaciones totales que tienen en el sitio, por un lado, las publicaciones que pueden ser dadas a préstamos (en este caso solo los libros y revistas, pero podría verse modificado) por otro y todos los prestamos realizados.  
+ 
+1.	Realizar un motor de búsqueda que dado el nombre me busca entre todas las publicaciones si existe. En caso afirmativo devolver el título, autor y año de publicación. Si además es un contenido que puede ser prestado, agregarle una leyenda que diga: “Si quiere tómelo prestado”. Por otro lado, si no existe el nombre lanzar una excepción que diga: “No tenemos el libro”.
+2.	Poder antes de realizar un préstamo verificar si está disponible el artículo o no. Es decir, que sea un objeto con la posibilidad de dar a préstamo y que tenga el stock suficiente. Lanzar las excepciones correspondientes si algo falla (“No se puede dar a prestamo” o “No hay stock suficiente”) o sino mostrar un mensaje de éxito (“Estpa disponible para ser prestado”).
+3.	Realizar el método agregarPrestamo. Sabemos que recibe un objeto que puede ser dado a préstamo (por ahora, libro o revista nada más). Lo que va a hacer agregar es llamar al método darPrestamo del objeto que se quiere dar a préstamo para que se actualice la fecha de devolución del préstamo según lo que el método devuelve. Entonces, se crea el préstamo con esa información y se agrega a la lista de préstamo realizado. Mostrar un mensaje de que se agregó el préstamo correctamente.
+4.	En caso de que un usuario venga  a solicitar una extensión del préstamo, la primer condición para que esto suceda es que el crédito del usuario no sea negativo, luego para el caso de los libros se podrá extender si hay mas de 5 en stock y para el caso de la revista si no tiene el usuario otra revista ya en préstamo activo. Lanzar la excepción correspondiente si algo falla (“No es posible extender el préstamo”) o sino un mensaje de éxito (“Prestamo extendido”)
+
+El main donde se prueben las funcionalidades se debe llamar: BibliotecaApp (sin excepción). Importante que antes de correr la clase corrector deberán correr su propio main para que se genere la carpeta out
+
+**Descargar el corrector a incluir en el proyecto:**  
+[CorrectorPrestamos.java](https://github.com/ProfesLabo5to/ResolucionEjercicios/blob/main/CorrectorPrestamos.java)
 
