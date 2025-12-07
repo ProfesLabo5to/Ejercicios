@@ -491,7 +491,7 @@ Como parte de la gestión, tendremos una lista con los tickets de software y de 
 - Cantidad de tickets totales. 
 - Ticket más antiguo que aún no ha sido agarrado por ningún desarrollador (es decir, el estado es abierto) 
 - Desarrollador que más tickets resuelve. 
-- Tickets asignados a un desarrollador determinado. 
+- Cantidad de tickets asignados a un desarrollador determinado. 
 - Desarrollador más antiguo en el sistema. 
 - Dado un ticket determinado, conocer el o los desarrolladores asignados a resolverlo. 
 - El tiempo promedio de resolución de los tickets en general. Para hacerlo calcular la diferencia entre fecha de resolución y fecha de creación y luego el promedio (Sugerencia: utilizar clase Duration)  
